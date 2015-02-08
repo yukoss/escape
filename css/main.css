@@ -1,0 +1,490 @@
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/brandon_reg.otf); }
+@font-face {
+  font-family: "Brandon Grotesque Light";
+  src: url(../fonts/brandon_light.otf); }
+@font-face {
+  font-family: "Brandon Grotesque Medium";
+  src: url(../fonts/brandon_med.otf); }
+@font-face {
+  font-family: "Brandon Grotesque Bold";
+  src: url(../fonts/brandon_bld.otf); }
+/*============================RESET============================ */
+h1, h2, h3, h4, h5, h6, p, header, section, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+:focus {
+  outline: none; }
+
+.clear {
+  float: none; }
+
+/*============================GLOBAL============================ */
+body {
+  font: 18px "Brandon Grotesque"; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 940px; }
+
+h2 {
+  font: 60px "Brandon Grotesque Light";
+  line-height: 1;
+  color: #222; }
+  h2 span {
+    font-family: "Brandon Grotesque Bold"; }
+
+/*============================HEADER BLOCK============================ */
+header {
+  padding: 21px 0;
+  height: 100vh;
+  background: url(../images/bg-header.jpg) no-repeat fixed center;
+  text-align: center; }
+  header nav {
+    padding-top: 10px;
+    float: right; }
+    header nav a {
+      margin-left: 30px;
+      font: 18px "Brandon Grotesque Medium";
+      color: #fff; }
+      header nav a:hover {
+        color: #fff;
+        text-decoration: #fff; }
+
+.logo {
+  float: left; }
+
+.top-header {
+  margin-bottom: 155px;
+  height: 100%; }
+
+.main-title {
+  font: 32px "Brandon Grotesque Light";
+  color: #fff;
+  clear: both; }
+  .main-title span {
+    font-size: 66px; }
+
+.btn-header {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 20px 65px;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  font: 23px "Brandon Grotesque Bold";
+  text-align: center;
+  color: #fff;
+  transition: 0.3s; }
+  .btn-header:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-decoration: none; }
+  .btn-header:active {
+    transform: scale(0.8); }
+  .btn-header:focus {
+    color: #fff;
+    text-decoration: none; }
+
+/*============================CONTENT GLOBAL============================ */
+.b-service,
+.b-brand,
+.b-list,
+.b-client,
+.b-team,
+.b-contact {
+  padding: 100px 0; }
+
+.b-service, .b-brand, .b-list {
+  overflow: hidden; }
+  .b-service .wrapper, .b-brand .wrapper, .b-list .wrapper {
+    padding: 0 40px; }
+  .b-service p, .b-brand p, .b-list p {
+    margin-top: 35px;
+    line-height: 24px; }
+  .b-service img, .b-brand img, .b-list img {
+    margin-top: 15px; }
+
+/*============================SERVICE BLOCK============================ */
+.b-service-item p {
+  max-width: 600px; }
+
+.b-service {
+  color: #777; }
+
+.b-service-item-text {
+  margin-right: 38px;
+  float: left; }
+
+/*============================BRAND BLOCK============================ */
+.b-brand {
+  background: #fafafa;
+  clear: both; }
+  .b-brand p {
+    max-width: 560px; }
+
+.b-brand-item-text {
+  float: right; }
+
+/*============================LIST INFO BLOCK============================ */
+.b-list-item li {
+  display: inline-block;
+  width: 395px;
+  overflow: hidden; }
+  .b-list-item li:nth-child(2n+1) {
+    margin-right: 65px; }
+  .b-list-item li span {
+    display: block;
+    margin-right: 20px;
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    background-color: #222;
+    float: left; }
+  .b-list-item li dl {
+    overflow: hidden; }
+
+.person {
+  background: url(../images/person-icon.png) no-repeat center; }
+
+.browser {
+  background: url(../images/browser-icon.png) no-repeat center; }
+
+.ipad {
+  background: url(../images/ipad-icon.png) no-repeat center; }
+
+.video {
+  background: url(../images/video-icon.png) no-repeat center; }
+
+.star {
+  background: url(../images/star-icon.png) no-repeat center; }
+
+.camera {
+  background: url(../images/camera-icon.png) no-repeat center; }
+
+/*============================FIXED HEADER NAV BLOCK============================ */
+#fixed-nav {
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  z-index: 2; }
+  #fixed-nav .wrapper {
+    padding: 0; }
+  #fixed-nav .top-header {
+    margin-bottom: 0;
+    height: 100%; }
+  #fixed-nav nav {
+    padding-top: 10px;
+    float: right; }
+    #fixed-nav nav a {
+      margin-left: 30px;
+      font: 18px "Brandon Grotesque Medium";
+      color: #fff; }
+      #fixed-nav nav a:hover {
+        color: #fff;
+        text-decoration: #fff; }
+
+/*============================CLIENT BLOCK============================ */
+.b-client {
+  background: #fafafa;
+  text-align: center; }
+  .b-client h2 + span {
+    font-size: 22px;
+    color: #777; }
+  .b-client ul {
+    margin-top: 50px;
+    height: 100%;
+    overflow: hidden; }
+  .b-client li {
+    display: inline-block;
+    text-align: left; }
+    .b-client li img {
+      margin: 0 0 0;
+      border: 7px solid #fff;
+      border-radius: 50%; }
+
+.comment {
+  position: relative;
+  margin-top: 30px;
+  padding: 30px 60px;
+  max-width: 645px;
+  height: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  background-color: #fff;
+  line-height: 28px; }
+  .comment span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 26px; }
+  .comment .name {
+    font-size: 20px;
+    color: #7690c5; }
+
+.b-client-avt-left {
+  float: left; }
+
+.b-client-avt-right {
+  float: right; }
+
+/*============================COMPANY BLOCK============================ */
+.b-company {
+  padding: 60px 0;
+  text-align: center; }
+  .b-company li {
+    display: inline-block;
+    margin: 0 20px; }
+
+/*============================TEAM BLOCK============================ */
+.b-team {
+  background: #111;
+  text-align: center;
+  color: #fff; }
+  .b-team h2 {
+    margin-bottom: 10px;
+    color: #fff; }
+    .b-team h2 + span {
+      color: #777; }
+  .b-team ul {
+    margin-top: 75px; }
+  .b-team li {
+    display: inline-block;
+    width: 235px;
+    font-family: "Brandon Grotesque Light"; }
+    .b-team li span {
+      display: block;
+      margin: 6px 0; }
+    .b-team li a {
+      display: inline-block;
+      margin: 0 5px;
+      width: 40px;
+      height: 40px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      text-indent: -9999px; }
+    .b-team li:nth-child(2n+2) {
+      margin: 0 45px; }
+  .b-team img {
+    margin-bottom: 14px;
+    border: 7px solid #fff;
+    border-radius: 50%; }
+  .b-team .twitter-icon {
+    background: url(../images/twitter-icon-sm.png) no-repeat center; }
+    .b-team .twitter-icon:hover {
+      border: 3px solid #00aced;
+      background-color: #00aced; }
+  .b-team .facebook-icon {
+    background: url(../images/facebook-icon-sm.png) no-repeat center; }
+    .b-team .facebook-icon:hover {
+      border: 3px solid #3b5998;
+      background-color: #3b5998; }
+  .b-team .pinterest-icon {
+    background: url(../images/pinterest-sm.png) no-repeat center; }
+    .b-team .pinterest-icon:hover {
+      border: 3px solid #cb2028;
+      background-color: #cb2028; }
+  .b-team .google-icon {
+    background: url(../images/google-icon-sm.png) no-repeat center; }
+    .b-team .google-icon:hover {
+      border: 3px solid #d95232;
+      background-color: #d95232; }
+
+.b-team-name {
+  font-family: "Brandon Grotesque Medium"; }
+
+.b-team-footer {
+  display: inline-block;
+  margin-top: 50px;
+  max-width: 600px;
+  text-align: center;
+  font-size: 20px;
+  color: #ebebeb; }
+
+/*============================CONTACT BLOCK============================ */
+.b-contact {
+  padding: 100px 0 0;
+  background: #7690c5;
+  color: #fff; }
+  .b-contact .wrapper {
+    overflow: hidden; }
+  .b-contact h2 {
+    width: 427px;
+    color: #fff; }
+  .b-contact .b-contact-item {
+    margin-top: 20px;
+    margin-right: 27px;
+    width: 455px;
+    float: left; }
+  .b-contact .b-contact-list {
+    margin-top: 45px; }
+  .b-contact ul li {
+    display: inline-block;
+    margin-bottom: 35px;
+    width: 191px; }
+    .b-contact ul li a {
+      color: #fff; }
+    .b-contact ul li:nth-child(2n+1) {
+      margin-right: 60px; }
+  .b-contact ul span {
+    display: block;
+    margin-right: 10px;
+    width: 30px;
+    height: 35px;
+    text-indent: -9999px;
+    float: left; }
+  .b-contact form {
+    margin-top: -60px;
+    max-width: 458px;
+    height: 487px;
+    text-align: left;
+    overflow: hidden; }
+
+.tel {
+  background: url(../images/mobile-icon.png) no-repeat center; }
+
+.email {
+  background: url(../images/mail-icon.png) no-repeat center; }
+
+.twitter {
+  background: url(../images/twitter-icon-lg.png) no-repeat center; }
+
+.facebook {
+  background: url(../images/facebook-icon-lg.png) no-repeat center; }
+
+.google {
+  background: url(../images/google-icon-lg.png) no-repeat center; }
+
+.pinterest {
+  background: url(../images/pinterest-icon-lg.png) no-repeat center; }
+
+input[type=text],
+input[type=email],
+textarea {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #777; }
+
+input[type=text],
+input[type=email] {
+  height: 53px; }
+
+textarea {
+  padding-top: 15px;
+  height: 210px;
+  resize: none; }
+
+input[type=submit] {
+  display: none;
+  padding: 7px 25px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: 0.2s; }
+  input[type=submit]:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+  input[type=submit]:active {
+    transform: scale(0.9);
+    box-shadow: inset 1px 1px 3px #222; }
+
+/*============================FOOTER BLOCK============================ */
+footer {
+  height: 80px;
+  background: #7690c5;
+  font: 16px "Brandon Grotesque Medium";
+  color: #fff;
+  text-align: center; }
+  footer .wrapper {
+    padding: 30px 0;
+    height: 100%;
+    border-top: 1px solid #87a0d2; }
+
+/*============================MEDIA QUERIES============================ */
+@media (max-width: 768px) {
+  header .top-header {
+    margin-bottom: 100px; }
+  header nav {
+    display: none; }
+  header .main-title {
+    font-size: 24px; }
+    header .main-title span {
+      font-size: 32px; }
+
+  #fixed-nav nav {
+    display: none;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    background: #222; }
+
+  .nav-btn {
+    display: block;
+    margin-top: 5px;
+    border: none;
+    background: none;
+    float: right; }
+
+  .nav-btn-line {
+    display: block;
+    margin: 4px 4px;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 3px; }
+
+  .b-service .wrapper, .b-brand .wrapper, .b-list .wrapper {
+    padding: 0; }
+
+  .b-list-item li {
+    width: 100%; }
+  .b-list-item dl {
+    max-width: 100%; }
+  .b-list-item span {
+    float: none; }
+
+  .b-client-avt-left {
+    float: none; }
+
+  .b-client-avt-right {
+    float: none; }
+
+  .b-company li {
+    margin-bottom: 20px; }
+
+  .b-team li {
+    margin-bottom: 30px; }
+
+  .b-contact .wrapper {
+    padding: 0 10px; }
+  .b-contact .b-contact-item {
+    width: 100%; }
+    .b-contact .b-contact-item li {
+      margin-right: 0; }
+  .b-contact form {
+    width: 100%;
+    text-align: center; } }
+@media (min-width: 769px) {
+  header {
+    background-size: cover; }
+
+  #fixed-nav nav {
+    display: block; }
+
+  .nav-btn {
+    display: none; } }
+
+/*# sourceMappingURL=main.css.map */
